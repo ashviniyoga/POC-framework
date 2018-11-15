@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="Ashvini" content>
+	<title>POC Framework - Example 1</title>
+<!--
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css">
+	
+	<link rel="stylesheet" href="css/pocImages.css" type="text/css">
+	<link rel="stylesheet" href="css/myStyling.css" type="text/css">
+	<link rel="stylesheet" href="css/helperClasses.css" type="text/css">
+	<link rel="stylesheet" href="css/ashvini.css" type="text/css">
+-->
+<link link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> 
+<link href="http://poc.gourmetswap.com/css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/sliders.css" type="text/css">
+<link rel="stylesheet" href="css/exampleTravel.css" type="text/css">
+	
+
+</head>
+<body>
+<div class="poc-main">
+
+<header class="poc-header poc-ph4 poc-blue">
+            <h1 class="poc-fl-l logo-header">
+                <a href="#">
+        <img src="images/logo.png" alt="Travel Logo" >
+    </a>
+            </h1>
+        
+            <input class="poc-menu-btn" type="checkbox" id="poc-menu-btn" />
+            <label class="poc-menu-icon" for="poc-menu-btn"><span class="poc-navicon"></span></label>
+            <ul class="poc-menu">
+                <li><a href="#">About </a></li>
+                <li><a href="#">Gallery </a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="poc-clear"></div>
+        </header>
+
+</div>
+<h1 class="poc-xxxlarge heading">Travel Time</h1>
+<h3 class="poc-large heading">People travel to faraway places to watch, in fascination, the people they ignore at home.</h3>
+<!-- Slider -->
+<div class="poc-sliderCenter">
+    <div class="poc-mySlides poc-fade">
+        <img src="images/daylight-daytime-fashion-906106.jpg" alt ="Daytimr">
+        <div class="poc-capText">Day light</div>
+    </div>
+    <div class="poc-mySlides poc-fade">
+        <img src="images/chalet-cold-dawn-976906.jpg" alt="cold dawn">
+        <div class="poc-capText">Cold Dawn</div>
+    </div>
+     <div class="poc-mySlides poc-fade">
+        <img src="images/canyon-cliffs-clouds-965154.jpg" alt="canyon cliff">
+        <div class="poc-capText">Canyon Cliff</div>
+    </div>
+     <div class="poc-mySlides poc-fade">
+        <img src="images/beach-island-landscape-155246.jpg" alt="Beach Island">
+        <div class="poc-capText">Beach Island</div>
+    </div>
+    
+
+
+    <a class="poc-prev" onclick="plusSlides(-1)">❮</a>
+    <a class="poc-next" onclick="plusSlides(1)">❯</a>
+</div>
+    <div style="text-align:center">
+<span class="poc-dot" onclick="currentSlide(1)"></span>
+<span class="poc-dot" onclick="currentSlide(2)"></span>
+<span class="poc-dot" onclick="currentSlide(3)"></span>
+<span class="poc-dot" onclick="currentSlide(4)"></span>
+
+
+</div>
+	
+<!-- For three column heading-->
+   <div class="section-3">
+    <div class="poc-row">
+  	   <div class="poc-col-sm-12 poc-col-md-3">
+       	<img class="poc-imgCircle poc-imgCentered" src="images/nature-outdoors.jpg" alt="Nature outdoor" />
+        	<h3 class="poc-xxlarge">Nature</h3>
+        	<p>Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea robin Antarctic cod. Yellow-and-black triplefin gulper South American Lungfish mahi-mahi, butterflyfish glass catfish soapfish ling gray mullet! Wabonnet denticle herring spiny-back cod straptail tailor zebra loach sea lamprey.</p>
+        	<p>
+        		<a class="poc-btn-primary poc-btn-xs" href="#">View Details &gt;&gt;</a>
+        	</p>
+        </div>
+   
+ 	   <div class="poc-col-sm-12 poc-col-md-3">
+       	<img class="poc-imgCircle poc-imgCentered" src="images/canyon-cliff-curve-259672.jpg"	 alt="canyon cliff" />
+        	<h3 class="poc-xxlarge">Canyon</h3>
+        	<p>Canyon Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Mauris sapien quam, dignissim vel feugiat id, tristique et ex. Ut euismod eget lorem et semper. Proin sed nibh sodales, facilisis nisl ac, blandit augue. </p>
+        	<p>
+        		<a class="poc-btn-primary poc-btn-xs" href="#">View Details &gt;&gt;</a>
+        	</p>
+        </div>
+         <div class="poc-col-sm-12 poc-col-md-3">
+       	<img class="poc-imgCircle poc-imgCentered" src="images/beach-beautiful-blue-325114.jpg" alt="frog" />
+        	<p class="poc-xxlarge">Ocean</p>
+        	<p>The ocean creatures lorem ipsum dummy text generator was created out of my love for the sea. Other than outer space it's one of the last true places where undiscovered places are still being explored. So get your filler text swimming along and give it a try.</p>
+        	<p>
+        		<a class="poc-btn-primary poc-btn-xs" href="#">View Details &gt;&gt;</a>
+        	</p>
+        </div>
+   </div>
+  
+ </div>
+
+<div class="contact" id="contact">
+<h1 class="poc-xlarge">Contact us for more details</h1>
+<div class="poc-form-item">
+	<label class="poc-medium">First Name <span class="required">*</span></label>
+    <input type="text" class="width50">
+
+	<label class="poc-medium">Last Name</label>
+    <input type="text" class="width50">
+
+	<label class="poc-medium">Comments/Message:</label>
+	<textarea rows="6"></textarea>
+
+		<p>
+		<a class="poc-btn-primary poc-btn-xs" href="#">Submit</a>
+		<a class="poc-btn-primary poc-btn-xs" href="#">Reset</a>
+	</p>
+		</div>
+</div>
+<footer  class="poc-pv2 poc-blue">
+<div>POC Framework - Copyright&copy;2018</div>
+</footer>
+<script type="text/javascript" src="http://poc.gourmetswap.com/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://poc.gourmetswap.com/js/fontawesome-all.min.js"></script>
+    <script type="text/javascript" src="http://poc.gourmetswap.com/js/pocSliders.js"></script>
+</body>
+</html>

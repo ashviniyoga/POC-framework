@@ -1,0 +1,103 @@
+.poc-accordion
+    background-color: #ccc
+    color: #67352e
+    cursor: pointer
+    padding: 10px
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 1em
+    margin: 2px
+    border-radius: 0
+.active, .poc-accordion:hover
+    background-color: #b1b0b0
+    color: white
+
+.pocPanel
+    padding: 10px 18px
+    display: none
+    font-size: .9em
+    background-color: white
+    overflow: hidden
+
+.pocPanelAni
+    padding: 0 18px
+    margin: 0
+    background-color: white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.4s ease-out
+
+.poc-accordion:after
+    content: '\002B'
+    color: #777
+    font-weight: bold
+    float: right
+    margin-left: 5px
+
+.active:after
+    //content: '\2212'
+
+// ACCORDION HORIZONTAL
+article.poc-accHor
+    display: block
+    width: 100%
+    margin: 0 auto
+    background-color: #ccc
+    overflow: auto
+article.poc-accHor section
+    position: relative
+    display: block
+    float: left
+    width: 7%
+    min-height: 250px
+    margin: 0 1px 0 0
+    color: #999
+    background-color: #999
+    overflow: hidden
+article.poc-accHor section h2
+    position: absolute
+    font-size: 1em
+    color: #67352e
+    min-width: 250px
+    height: 30px
+    top: 240px
+    left: 3px
+    text-indent: 20px
+    padding: 0
+    margin: 0
+    color: #ddd
+    -webkit-transform-origin: 0 0
+    -moz-transform-origin: 0 0
+    -ms-transform-origin: 0 0
+    -o-transform-origin: 0 0
+    transform-origin: 0 0
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    -ms-transform: rotate(-90deg)
+    -o-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+article.poc-accHor section h2 a
+    display: block
+    width: 100%
+    line-height: 1.4em
+    text-decoration: none
+    color: inherit
+    outline: 0 none
+article.poc-accHor section:target
+    width: 62%
+    padding: 0 15px
+    color: #333
+    background-color: #ccc
+article.poc-accHor section:target h2
+    position: static
+    font-size: 1.3em
+    padding-top: 30px
+    text-indent: 0
+    color: #333
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)

@@ -1,0 +1,11 @@
+.jumbotron {
+  background-image: url(../images/abstract.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 400px; }
+  .jumbotron .p1 {
+    padding: 150px 0 0 0; }
+  .jumbotron .p2 {
+    margin: -30px; }
+
+/*# sourceMappingURL=example2.css.map */

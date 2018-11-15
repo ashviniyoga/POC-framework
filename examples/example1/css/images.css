@@ -1,0 +1,17 @@
+.poc-img100 {
+  width: 100%;
+  height: auto; }
+
+.poc-corners15 {
+  border-radius: 15px; }
+
+.poc-corners5 {
+  border-radius: 5px; }
+
+.poc-imgRounded {
+  border-radius: 50%; }
+
+.poc-imgCircle {
+  border-radius: 50%; }
+
+/*# sourceMappingURL=images.css.map */
