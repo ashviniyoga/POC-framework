@@ -1,0 +1,131 @@
+@mixin codeBg 
+	//background: #ededed
+	//border: 1px solid #333
+	//padding: 1rem
+	//top: 0
+	//display: block
+	//line-height: 20px
+	//margin-bottom: 16px
+	//white-space: pre-wrap
+	//font-size: 15px
+
+@mixin poc-btn
+	font-family: $fontFamily
+	color: #fff
+	font-size: 15px
+	border-radius: 5px
+	min-height: 40px
+	padding: 8px 24px
+	font-weight: 500
+	text-decoration: none
+	cursor: pointer
+	display: inline-block
+	line-height: 20px
+	border: 1px solid transparent
+	vertical-align: middle
+	-webkit-appearance: none
+
+pre
+	@include codeBg
+	//width: 80%
+	
+.article
+	margin: 1em
+
+	
+	
+code
+	@include codeBg
+	
+.poc-btn-primary
+	@include poc-btn
+	background-color: $primaryColor
+	color: #fff
+	&:hover
+		background-color: darken($primaryColor,20%)
+		color: #fff
+.poc-btn-success
+	@include poc-btn
+	background-color: $successColor
+	color: #fff
+	&:hover
+		background-color: darken($successColor,8%)
+		color: #fff
+.poc-btn-danger
+	@include poc-btn
+	background-color: $dangerColor
+	color: #fff
+	&:hover
+		background-color: darken($dangerColor,10%)
+		color: #fff
+
+.poc-btn-default
+	@include poc-btn
+	background-color: $defaultColor
+	border: solid 1px #ededed
+	color: #000
+	&:hover
+		background-color: darken($defaultColor,20%)	
+
+.poc-btn-outline
+	@include poc-btn
+	background-color: #fff
+	border: 2px solid $primaryColor
+	color: $primaryColor
+	&:hover
+		font-weight: bold
+.poc-btn-disabled
+	@include poc-btn
+	background-color: #fff
+	color: #999
+	border: solid 1px #999
+	&:hover
+		cursor: default
+.poc-btn-lg
+	@include poc-btn
+	font-size: 21px
+	min-height: 56px
+	padding: 18px 32px
+	border-radius: 3px
+.poc-btn-md
+	@include poc-btn
+	font-size: 18px
+	min-height: 48px
+	padding: 12px 20px
+	border-radius: 3px
+.poc-btn-sm
+	@include poc-btn
+	font-size: 15px
+	min-height: 30px
+	padding: 6px 18px
+	border-radius: 3px
+.poc-btn-xs
+	@include poc-btn
+	font-size: 12px
+	min-height: 28px
+	padding: 5px 15px
+	border-radius: 3px
+.poc-btn-w100
+	@include poc-btn
+	width: 100%
+	margin-top: 10px
+.poc-btn-w50
+	@include poc-btn
+	width: 50%
+	margin-top: 10px
+.poc-btn-w10
+	@include poc-btn
+	width: 15%
+	margin-top: 10px
+	text-align: center
+#top
+	position: fixed
+	cursor: pointer
+	z-index: 99
+	outline: none
+	color: #000
+	right: 20px
+	width: fixed
+
+
+

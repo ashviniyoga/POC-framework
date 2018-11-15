@@ -1,0 +1,1112 @@
+$bodyColor: #fff8ed
+$textColor: #67352e
+$primaryGreen: #b4e0cf
+
+
+$font-standard: 'Roboto', sans-serif
+$font-title: 'Montserrat', sans-serif
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+/* End Fonts */
+
+/* Import */
+@import reset
+/* Import */
+
+body 
+    background: $bodyColor
+    color: $textColor
+    font-family: $font-standard
+    font-size: 14px
+    font-weight: 400
+    line-height: 1.5
+
+a
+    text-decoration: none
+    color: $textColor
+
+ul
+    list-style: none
+    
+header
+    background-color: $primaryGreen
+    .logo-header
+        a
+            text-decoration: none
+            font-size: 1.5rem
+            img
+                max-height: 40px
+    .poc-button
+        display: inline
+
+
+footer
+    background-color: $primaryGreen
+    //position: absolute
+    right: 0
+    bottom: 0
+    left: 0
+    text-align: center
+    width: 100%
+                
+h1, h2, h3, h4, h5, h6
+    font-family: $font-title
+    margin-bottom: .5rem
+    font-family: inherit
+    font-weight: 500
+    line-height: 1.2
+    color: inherit
+    
+.h1, h1
+    font-size: 2.5rem
+    
+.h2, h2
+    font-size: 2rem
+
+.h3, h3
+    font-size: 1.75rem
+
+.h4, h4
+    font-size: 1.5rem
+
+.h5, h5
+    font-size: 1.25rem
+
+.h6, h6
+    font-size: 1rem
+    
+nav
+   
+    
+aside
+   
+
+aside nav li
+    border-bottom: solid 1px #fff
+    padding: 5px 10px
+        
+    a
+        &::after 
+            content: ''
+            display: block
+            width: 0
+            height: 2px
+            background: #000
+            transition: width .3s
+
+        &:hover::after
+            width: 100%
+            //transition: width .3s
+
+        
+section
+    
+.sidebar
+    background-color: $bodyColor
+    //position: fixed
+    overflow: auto
+    //height: calc(100vh - 4rem)
+    height: 100%
+    
+.sidebar input.live-search-box
+    width: 70%
+    margin: 20px auto    
+
+.poc-main
+    background-color: #fff
+    
+.poc-clear
+    clear: both
+
+
+.poc-bold
+    font-weight: bold
+    
+/* Button */
+.poc-btn-row
+    display: inline-flwx
+    height: 100%
+    
+    
+.poc-button
+    border: solid 1px #80072c
+    padding: 5px 10px
+    margin: 5px
+    border-radius: 6px
+    display: inline-flex
+    &:hover
+            background-color: #67352e
+            color: #fff
+            transition: all .4s ease
+
+.poc-button-big
+    font-size: 22px
+    padding: 8px 40px
+    
+a.primary-button
+        border-color: #80072c  
+        background-color: #80072c
+        color: #fff
+        &:hover
+            background-color: #fff
+            color: #80072c
+        
+/* End Button */
+
+
+/* Alingn text */
+.poc-text-center
+    text-align: center
+    
+/* End Alingn text */
+
+
+
+.poc-bg-gray-light
+    background-color: #F8F8F8
+    
+.poc-flex-row
+    display: flex
+    height: 100%
+    justify-content: space-between
+    
+
+/* Horizontal Padding */    
+.poc-ph2
+    padding-left: 1rem
+    padding-right: 1rem
+    
+.poc-ph4
+    padding-left: 2rem
+    padding-right: 2rem
+    
+.poc-ph6
+    padding-left: 3rem
+    padding-right: 3rem
+    
+.poc-ph8
+    padding-left: 4rem
+    padding-right: 4rem
+
+.poc-ph10
+    padding-left: 5rem
+    padding-right: 5rem
+/* End Horizontal Padding */    
+
+/* Vetical Padding */        
+.poc-pv2
+    padding-top: .5rem
+    padding-bottom: .5rem 
+
+.poc-pv4
+    padding-top: 1rem
+    padding-bottom: 1rem 
+
+.poc-pv6
+    padding-top: 2rem
+    padding-bottom: 2rem 
+
+.poc-pv8
+    padding-top: 4rem
+    padding-bottom: 4rem 
+
+.poc-pv10
+    padding-top: 5rem
+    padding-bottom: 5rem 
+
+/* End Vertical Padding */    
+
+
+/* Horizontal margin */    
+.poc-mh2
+    margin-left: 1rem
+    margin-right: 1rem
+    
+.poc-mh4
+    margin-left: 2rem
+    margin-right: 2rem
+    
+.poc-mh6
+    margin-left: 3rem
+    margin-right: 3rem
+    
+.poc-mh8
+    margin-left: 4rem
+    margin-right: 4rem
+
+.poc-mh10
+    margin-left: 4rem
+    margin-right: 4rem
+/* End Horizontal Padding */    
+
+/* Vetical Margin */        
+.poc-mv1
+    margin-top: .5rem
+    margin-bottom: .5rem 
+
+.poc-mv2
+    margin-top: 1rem
+    margin-bottom: 1rem 
+
+.poc-mv4
+    margin-top: 2rem
+    margin-bottom: 2rem 
+
+.poc-mv8
+    margin-top: 4rem
+    margin-bottom: 4rem 
+
+.poc-mv10
+    margin-top: 5rem
+    margin-bottom: 5rem 
+
+/* End Vertical Padding */
+
+
+/* Vertical Align */
+.poc-vert-align-middle
+    vertical-align: middle
+/* End Vertical Align */
+
+.poc-db
+    display: block
+
+/* Floats */
+.poc-fl-l
+    float: left
+    
+.poc-fl-r
+    float: right
+/* End Floats */
+
+/* Dispays */
+.poc-disp-inlineflex
+    display: inline-flex 
+    
+.poc-sm-disp-none
+    display: none
+
+/* End Dispays */
+    
+/* Grid examples */    
+.poc-row .poc.poc-col:nth-last-child(1),
+.poc-row .poc.poc-col:nth-last-child(1) ~ .poc-col
+    width: 100%
+    width: calc((100% - 16px*0) / 1)
+
+.poc-row.no-space .poc-col:nth-last-child(1),
+.poc-row.no-space .poc-col:nth-last-child(1) ~ .poc-col
+    width: 100%
+
+.poc-row .poc-col:nth-last-child(2),
+.poc-row .poc-col:nth-last-child(2) ~ .poc-col
+    width: 50%
+    width: calc((100% - 16px*1) / 2)
+
+.poc-row.no-space .poc-col:nth-last-child(2),
+.poc-row.no-space .poc-col:nth-last-child(2) ~ .poc-col
+    width: 50%
+
+.poc-row .poc-col:nth-last-child(3),
+.poc-row .poc-col:nth-last-child(3) ~ .poc-col
+    width: 33.33333333%
+    width: calc((100% - 16px*2) / 3)
+
+.poc-row.no-space .poc-col:nth-last-child(3),
+.poc-row.no-space .poc-col:nth-last-child(3) ~ .poc-col
+    width: 33.33333333%
+
+.poc-row .poc-col:nth-last-child(4),
+.poc-row .poc-col:nth-last-child(4) ~ .poc-col
+    width: 25%
+    width: calc((100% - 16px*3) / 4)
+
+.poc-row.no-space .poc-col:nth-last-child(4),
+.poc-row.no-space .poc-col:nth-last-child(4) ~ .poc-col
+    width: 25%
+
+.poc-row .poc-col:nth-last-child(5),
+.poc-row .poc-col:nth-last-child(5) ~ .poc-col
+    width: 20%
+    width: calc((100% - 16px*4) / 5)
+
+.poc-row.no-space .poc-col:nth-last-child(5),
+.poc-row.no-space .poc-col:nth-last-child(5) ~ .poc-col
+    width: 20%
+
+.poc-row .poc-col:nth-last-child(6),
+.poc-row .poc-col:nth-last-child(6) ~ .poc-col
+    width: 16.66666667%
+    width: calc((100% - 16px*5) / 6)
+
+.poc-row.no-space .poc-col:nth-last-child(6),
+.poc-row.no-space .poc-col:nth-last-child(6) ~ .poc-col
+    width: 16.66666667%
+
+.poc-row .poc-col:nth-last-child(7),
+.poc-row .poc-col:nth-last-child(7) ~ .poc-col
+    width: 14.28571429%
+    width: calc((100% - 16px*6) / 7)
+
+.poc-row.no-space .poc-col:nth-last-child(7),
+.poc-row.no-space .poc-col:nth-last-child(7) ~ .poc-col
+    width: 14.28571429%
+
+.poc-row .poc-col:nth-last-child(8),
+.poc-row .poc-col:nth-last-child(8) ~ .poc-col
+    width: 12.5%
+    width: calc((100% - 16px*7) / 8)
+
+.poc-row.no-space .poc-col:nth-last-child(8),
+.poc-row.no-space .poc-col:nth-last-child(8) ~ .poc-col
+    width: 12.5%
+
+.poc-row .poc-col:nth-last-child(9),
+.poc-row .poc-col:nth-last-child(9) ~ .poc-col
+    width: 11.11111111%
+    width: calc((100% - 16px*8) / 9)
+
+.poc-row.no-space .poc-col:nth-last-child(9),
+.poc-row.no-space .poc-col:nth-last-child(9) ~ .poc-col
+    width: 11.11111111%
+
+.poc-row .poc-col:nth-last-child(10),
+.poc-row .poc-col:nth-last-child(10) ~ .poc-col
+    width: 10%
+    width: calc((100% - 16px*9) / 10)
+
+.poc-row.no-space .poc-col:nth-last-child(10),
+.poc-row.no-space .poc-col:nth-last-child(10) ~ .poc-col
+    width: 10%
+
+.poc-row .poc-col:nth-last-child(11),
+.poc-row .poc-col:nth-last-child(11) ~ .poc-col
+    width: 9.09090909%
+    width: calc((100% - 16px*10) / 11)
+
+
+.poc-row.no-space .poc-col:nth-last-child(11),
+.poc-row.no-space .poc-col:nth-last-child(11) ~ .poc-col
+    width: 9.09090909%
+
+.poc-row .poc-col:nth-last-child(12),
+.poc-row .poc-col:nth-last-child(12) ~ .poc-col
+    width: 8.33333333%
+    width: calc((100% - 16px*11) / 12)
+
+.poc-row.no-space .poc-col:nth-last-child(12),
+.poc-row.no-space .poc-col:nth-last-child(12) ~ .poc-col
+    width: 8.33333333%
+
+.poc-row .poc-col:nth-last-child(13),
+.poc-row .poc-col:nth-last-child(13) ~ .poc-col
+    width: 7.69230769%
+    width: calc((100% - 16px*12) / 13)
+
+.poc-row.no-space .poc-col:nth-last-child(13),
+.poc-row.no-space .poc-col:nth-last-child(13) ~ .poc-col
+    width: 7.69230769%
+
+.poc-row .poc-col:nth-last-child(14),
+.poc-row .poc-col:nth-last-child(14) ~ .poc-col
+    width: 7.14285714%
+    width: calc((100% - 16px*13) / 14)
+
+.poc-row.no-space .poc-col:nth-last-child(14),
+.poc-row.no-space .poc-col:nth-last-child(14) ~ .poc-col
+    width: 7.14285714%
+
+.poc-row .poc-col:nth-last-child(15),
+.poc-row .poc-col:nth-last-child(15) ~ .poc-col
+    width: 6.66666667%
+    width: calc((100% - 16px*14) / 15)
+
+.poc-row.no-space .poc-col:nth-last-child(15),
+.poc-row.no-space .poc-col:nth-last-child(15) ~ .poc-col
+    width: 6.66666667%
+
+.poc-row .poc-col:nth-last-child(16),
+.poc-row .poc-col:nth-last-child(16) ~ .poc-col
+    width: 6.25%
+    width: calc((100% - 16px*15) / 16)
+
+.poc-row.no-space .poc-col:nth-last-child(16),
+.poc-row.no-space .poc-col:nth-last-child(16) ~ .poc-col
+    width: 6.25%
+
+.poc-row .poc-col:nth-last-child(17),
+.poc-row .poc-col:nth-last-child(17) ~ .poc-col
+    width: 5.88235294%
+    width: calc((100% - 16px*16) / 17)
+
+.poc-row.no-space .poc-col:nth-last-child(17),
+.poc-row.no-space .poc-col:nth-last-child(17) ~ .poc-col
+    width: 5.88235294%
+
+.poc-row .poc-col:nth-last-child(18),
+.poc-row .poc-col:nth-last-child(18) ~ .poc-col
+    width: 5.55555556%
+    width: calc((100% - 16px*17) / 18)
+
+.poc-row.no-space .poc-col:nth-last-child(18),
+.poc-row.no-space .poc-col:nth-last-child(18) ~ .poc-col
+    width: 5.55555556%
+
+.poc-row .poc-col:nth-last-child(19),
+.poc-row .poc-col:nth-last-child(19) ~ .poc-col
+    width: 5.26315789%
+    width: calc((100% - 16px*18) / 19)
+
+.poc-row.no-space .poc-col:nth-last-child(19),
+.poc-row.no-space .poc-col:nth-last-child(19) ~ .poc-col
+    width: 5.26315789%
+
+.poc-row .poc-col:nth-last-child(20),
+.poc-row .poc-col:nth-last-child(20) ~ .poc-col
+    width: 5%
+    width: calc((100% - 16px*19) / 20)
+
+.poc-row.no-space .poc-col:nth-last-child(20),
+.poc-row.no-space .poc-col:nth-last-child(20) ~ .poc-col
+    width: 5%
+
+.poc-row .poc-col:nth-last-child(21),
+.poc-row .poc-col:nth-last-child(21) ~ .poc-col
+    width: 4.76190476%
+    width: calc((100% - 16px*20) / 21)
+
+.poc-row.no-space .poc-col:nth-last-child(21),
+.poc-row.no-space .poc-col:nth-last-child(21) ~ .poc-col
+    width: 4.76190476%
+    
+
+    
+.poc-row
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-box-align: start
+    -webkit-align-items: flex-start
+    -ms-flex-align: start
+    align-items: flex-start
+
+
+.poc-row > [class*="poc-col-"], .poc-row > .poc-col 
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+.poc-row .poc-col 
+    width: 100%
+  
+/* End Grid examples */
+
+img.poc-responsive
+    max-width: 100%
+
+    
+
+    
+/* New */
+
+.poc-content
+    //margin: 20px auto
+    width: 100%
+    //font-size: 18px
+    padding: 30px
+
+
+p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form
+    margin-bottom: 16px
+
+.map-form-item
+    border: 1px solid #ccc
+    padding: 20px
+    margin: 20px 0
+    
+label  
+    display: block 
+    color: #313439 
+    margin-bottom: 4px 
+    font-size: 20px  
+
+
+
+input
+    &[type="text"]
+        display: block 
+        width: 50% 
+        font-size: 15px 
+        height: 30px 
+        vertical-align: middle 
+        background-color: #f0f0f0 
+        border: 1px solid #c3c3c3 
+        border-radius: 3px 
+        margin: 1px 0px 10px 0px  
+
+
+
+input
+    &[type="radio"],
+    &[type="checkbox"]  
+        vertical-align: middle 
+        position: relative 
+        bottom: 0.15rem 
+        font-size: 115% 
+        margin-right: 3px  
+        display: inline-block 
+        width: auto 
+        height: auto 
+        padding: 10px  
+
+
+input
+    &[type="search"],
+    .search  
+    background-repeat: no-repeat 
+    background-position: 8px 53% 
+    background-image: url('data:image/svg+xml utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#000" fill-opacity="0.4" d="M14.891,14.39l-0.5.5a0.355,0.355,0,0,1-.5,0L9.526,10.529a5.3,5.3,0,1,1,2.106-4.212,5.268,5.268,0,0,1-1.1,3.21l4.362,4.362A0.354,0.354,0,0,1,14.891,14.39ZM6.316,2.418a3.9,3.9,0,1,0,3.9,3.9A3.9,3.9,0,0,0,6.316,2.418Z"/></svg>') 
+    padding-left: 32px  
+
+textarea 
+    font-family: 'Catamaran', sans-serif 
+    font-size: 15px 
+    width: 50%
+    background-color: #f0f0f0 
+    border: 1px solid #c3c3c3 
+    border-radius: 5px 
+    margin: 0 12px  
+
+
+
+label.checkbox, label.radio  
+    display: block 
+    margin-right: 16px 
+    text-transform: capitalize 
+    font-weight: normal 
+    font-size: 18px 
+    line-height: 1.8 
+    cursor: pointer 
+
+
+
+fieldset  
+    font-family: 'Catamaran', sans-serif 
+    border: 1px solid #c3c3c3 
+    padding: 1rem 
+    margin: 2rem 0 
+    color: #313439 
+    width: 50% 
+
+fieldset label, fieldset input 
+    margin-left: 15px 
+    line-height: 1.8 
+
+
+.width50 
+    width: 50% 
+
+
+
+.required  
+    position: relative 
+    top: 1px 
+    font-weight: bold 
+    color: #f03c69 
+    font-size: 110% 
+
+
+
+.code  
+    color: gray 
+    background: #e0e1e1 
+    display: inline-block 
+
+
+/*commented ,.button*/
+button  
+
+    font-size: 15px 
+    color: #fff 
+    background-color: #06f 
+    border-radius: 3px 
+    min-height: 30px 
+    padding: 5px 10px 
+    font-weight: 500 
+    text-decoration: none 
+    cursor: pointer 
+    display: inline-block 
+    line-height: 18px 
+    border: 1px solid #c3c3c3  
+    vertical-align: middle 
+    margin: 10px 
+
+
+/*removed css for ,.button:hover*/
+
+button:hover  
+    outline: none 
+    text-decoration: none 
+    color: #000 
+    background-color: #cce0ff 
+
+
+pre  
+    font-size: 87.5%   
+
+pre,
+pre code  
+    background: #ededed 
+    padding: 0 
+    top: 0 
+    display: block 
+    line-height: 20px 
+    white-space: pre-wrap
+    border-radius: 5px
+
+
+pre  
+    padding: 1rem  
+    //margin-top: -20px 
+
+h3 p:first-child 
+    padding: 100px 
+
+
+/*Table css*/
+table  
+    border-collapse: collapse 
+    border-spacing: 0 
+    max-width: 100% 
+    font-size: 18px 
+    line-height: 24px  
+
+
+table caption  
+    text-align: left 
+    font-size: 14px 
+    font-weight: 500 
+    color: #676b72
+    
+th
+    text-align: left 
+    font-weight: 700 
+    vertical-align: bottom   
+
+td  
+    vertical-align: top   
+
+table.bordered td,
+table.bordered th  
+    border: 1px solid #ccc   
+
+table.bordered td:first-child,
+table.bordered th:first-child,
+table.striped td:first-child,
+table.striped th:first-child  
+    padding-left: 2rem   
+
+table.bordered td:last-child,
+table.bordered th:last-child,
+table.striped td:last-child,
+table.striped th:last-child  
+    padding-right: 1rem 
+
+table.striped tr:nth-child(odd) td  
+    background: #e8e8e8   
+/* ENd New*/
+    
+/* header */
+.poc-header
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1) 
+    //position: fixed 
+    //width: 95% 
+    z-index: 3 
+ 
+
+.poc-header ul 
+    margin: 0 
+    padding: 0 
+    list-style: none 
+    overflow: hidden 
+ 
+
+.poc-header .poc-menu li a 
+    display: block 
+    padding: 20px 20px 
+    text-decoration: none 
+ 
+.poc-header .poc-menu li a:hover,
+.poc-header .poc-menu .menu-btn:hover 
+    background-color: #f4f4f4 
+ 
+
+.poc-header .logo 
+    display: block 
+    float: left 
+    font-size: 2em 
+    padding: 10px 20px 
+    text-decoration: none 
+
+
+
+/* menu */
+.poc-header .poc-menu 
+    clear: both 
+    max-height: 0 
+    transition: max-height .2s ease-out 
+
+ 
+/* menu icon */
+.poc-header .poc-menu-icon 
+    cursor: pointer 
+    display: inline-block 
+    float: right 
+    padding: 28px 20px 
+    position: relative 
+    user-select: none 
+ 
+
+.poc-header .poc-menu-icon .poc-navicon 
+    background: #333 
+    display: block 
+    height: 2px 
+    position: relative 
+    transition: background .2s ease-out 
+    width: 18px 
+ 
+
+.poc-header .poc-menu-icon .poc-navicon:before,
+.poc-header .poc-menu-icon .poc-navicon:after 
+    background: #333 
+    content: '' 
+    display: block 
+    height: 100% 
+    position: absolute 
+    transition: all .2s ease-out 
+    width: 100% 
+ 
+
+.poc-header .poc-menu-icon .poc-navicon:before 
+    top: 5px 
+ 
+
+.poc-header .poc-menu-icon .poc-navicon:after 
+    top: -5px 
+ 
+
+/* menu btn */
+
+.poc-header .poc-menu-btn 
+    display: none 
+ 
+
+.poc-header .poc-menu-btn:checked~.poc-menu 
+    max-height: 240px 
+ 
+
+.poc-header .poc-menu-btn:checked~.poc-menu-icon .poc-navicon 
+    background: transparent 
+ 
+
+.poc-header .poc-menu-btn:checked~.poc-menu-icon .poc-navicon:before 
+    transform: rotate(-45deg) 
+ 
+
+.poc-header .poc-menu-btn:checked~.poc-menu-icon .poc-navicon:after 
+    transform: rotate(45deg) 
+ 
+
+.poc-header .poc-menu-btn:checked~.poc-menu-icon:not(.poc-steps) .poc-navicon:before,
+.poc-header .poc-menu-btn:checked~.poc-menu-icon:not(.poc-steps) .poc-navicon:after 
+    top: 0     
+    
+/* Grid Demo */
+.poc-grid-demo
+    div[class*=poc-col]
+        border: solid 1px #ccc
+        text-align: center
+        padding: 2px 0
+        margin: 0 0 15px 0  
+        
+/* End Grid Demo */    
+
+.live-search-list li.active a
+    padding-left: 10px
+    display: inherit
+    font-weight: bold
+    
+@media (min-width: 300px)
+    .poc-flex-row
+        display: inherit
+        
+    .poc-col-sm
+        flex-basis: 0
+        flex-grow: 1
+        max-width: 100%
+
+    .poc-col-sm-auto
+        flex: 0 0 auto
+        width: auto
+        max-width: none
+
+    .poc-col-sm-1
+        flex: 0 0 8.333333%
+        max-width: 8.333333%
+
+    .poc-col-sm-2
+        flex: 0 0 16.666667%
+        max-width: 16.666667%
+
+    .poc-col-sm-3
+        flex: 0 0 25%
+        max-width: 25%
+
+    .poc-col-sm-4 
+        flex: 0 0 33.333333%
+        max-width: 33.333333%
+
+    .poc-col-sm-5
+        flex: 0 0 41.666667%
+        max-width: 41.666667%
+
+    .poc-col-sm-6
+        flex: 0 0 50%
+        max-width: 50%
+
+    .poc-col-sm-7
+        flex: 0 0 58.333333%
+        max-width: 58.333333%
+
+    .poc-col-sm-8
+        flex: 0 0 66.666667%
+        max-width: 66.666667%
+
+    .poc-col-sm-9
+        flex: 0 0 75%
+        max-width: 75%
+
+    .poc-col-sm-10
+        flex: 0 0 83.333333%
+        max-width: 83.333333%
+
+    .poc-col-sm-11
+        flex: 0 0 91.666667%
+        max-width: 91.666667%
+
+    .poc-col-sm-12
+        flex: 0 0 100%
+        max-width: 100%
+        
+//@media (min-width: 768px) and (max-width: 979px)
+@media (min-width: 768px)
+    .poc-flex-row
+        display: flex
+
+    .poc-sm-disp-none
+        display: inherit
+        
+    ul
+    .poc-ul-hor
+        li
+            float: left
+            margin-left: 10px
+            
+    .poc-align-center
+        margin: 0 auto
+        display: inline-flex
+
+    .poc-col-md
+        flex-basis: 0 
+        flex-grow: 1 
+        max-width: 100% 
+
+    .poc-col-md-auto 
+        flex: 0 0 auto 
+        width: auto 
+        max-width: none 
+
+    .poc-col-md-1 
+        flex: 0 0 8.333333% 
+        max-width: 8.333333% 
+
+    .poc-col-md-2 
+        flex: 0 0 16.666667% 
+        max-width: 16.666667% 
+
+    .poc-col-md-3 
+        flex: 0 0 25% 
+        max-width: 25% 
+
+    .poc-col-md-4 
+        flex: 0 0 33.333333% 
+        max-width: 33.333333% 
+
+    .poc-col-md-5 
+        flex: 0 0 41.666667% 
+        max-width: 41.666667% 
+
+    .poc-col-md-6 
+        flex: 0 0 50% 
+        max-width: 50% 
+
+    .poc-col-md-7 
+        flex: 0 0 58.333333% 
+        max-width: 58.333333% 
+
+    .poc-col-md-8 
+        flex: 0 0 66.666667% 
+        max-width: 66.666667% 
+
+    .poc-col-md-9 
+        flex: 0 0 75% 
+        max-width: 75% 
+
+    .poc-col-md-10 
+        flex: 0 0 83.333333% 
+        max-width: 83.333333% 
+
+    .poc-col-md-11 
+        flex: 0 0 91.666667% 
+        max-width: 91.666667% 
+
+    .poc-col-md-12 
+        flex: 0 0 100% 
+        max-width: 100% 
+
+    
+    
+
+/* Large desktop */
+@media (min-width: 1200px)
+    aside
+        flex: 1  
+
+    section
+        flex: 2
+
+    header
+        .logo-header
+            a
+                text-decoration: none
+                font-size: 1.5rem        
+
+    /* Grid Examples */
+    .poc-col-l
+        flex-basis: 0
+        flex-grow: 1
+        max-width: 100%
+
+    .poc-col-l-auto
+        flex: 0 0 auto
+        width: auto
+        max-width: none
+
+    .poc-col-l-1
+        flex: 0 0 8.333333%
+        max-width: 8.333333%
+
+    .poc-col-l-2
+        flex: 0 0 16.666667%
+        max-width: 16.666667%
+
+    .poc-col-l-3
+        flex: 0 0 25%
+        max-width: 25%
+
+    .poc-col-l-4 
+        flex: 0 0 33.333333%
+        max-width: 33.333333%
+
+    .poc-col-l-5
+        flex: 0 0 41.666667%
+        max-width: 41.666667%
+
+    .poc-col-l-6
+        flex: 0 0 50%
+        max-width: 50%
+
+    .poc-col-l-7
+        flex: 0 0 58.333333%
+        max-width: 58.333333%
+
+    .poc-col-l-8
+        flex: 0 0 66.666667%
+        max-width: 66.666667%
+
+    .poc-col-l-9
+        flex: 0 0 75%
+        max-width: 75%
+
+    .poc-col-l-10
+        flex: 0 0 83.333333%
+        max-width: 83.333333%
+
+    .poc-col-l-11
+        flex: 0 0 91.666667%
+        max-width: 91.666667%
+
+    .poc-col-l-12
+        flex: 0 0 100%
+        max-width: 100%
+
+    .poc-container
+        //max-width: 1000px
+        //margin: 0 auto
+        
+    /* End Grid Examples */
+        
+/* Portrait tablet to landscape and desktop */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+
+    
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+    
+    
+
+/* 48em = 768px */
+
+@media (min-width: 48em) 
+    .poc-header li 
+        float: left 
+ 
+    .poc-header .poc-menu li a 
+        padding: 22px 30px 
+ 
+    .poc-header .poc-menu 
+        clear: none 
+        float: right 
+        max-height: none 
+ 
+    .poc-header .poc-menu-icon 
+        display: none 
+  
+        
+        
+   
+    .sidebar-inner .poc-menu 
+        clear: none 
+        float: right 
+        max-height: none 
+ 
+    .poc-header .poc-menu-icon 
+        display: none 
+  
+
+        
+   
+    
+            

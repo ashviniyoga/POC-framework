@@ -1,0 +1,56 @@
+@mixin pocTable
+	color: #333
+	//border: solid 1px #333
+	width: 80%
+	font-size: 15px
+	line-height: 24px
+	text-align: left
+	border-collapse: collapse
+	margin: 1em 
+	
+
+.poc-basic-table
+	@include pocTable
+	th
+		background-color: #ededed
+		padding: 1em
+	td
+		padding: 1em
+	
+.poc-border-table
+	@include pocTable
+	th
+		border: solid 1px #333
+		background-color: #ededed
+		padding: 1em
+	td
+		border: solid 1px #333
+		padding: 1em
+		
+
+.poc-stripe-table
+	@include pocTable
+	th
+		background-color: #ccc
+		color: #333
+		padding: 1em
+	tr
+		&:nth-child(odd)
+			background-color: #ededed	
+	td
+		padding: 1em
+
+.poc-hover-table
+	@include pocTable
+	th
+		background-color: #ccc
+		color: #333
+		padding: 1em
+	tr
+		&:hover
+			background-color: #999
+	td
+		padding: 1em
+
+	
+	

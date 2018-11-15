@@ -1,0 +1,12 @@
+//   document.getElementById('frmSearch').onsubmit = function() {
+//        window.location = 'http://poc.gourmetswap.com/search?q= ' + document.getElementById('txtSearch').value;
+//        return false;
+//    }
+   
+  document.getElementById('frmSearch').onsubmit = function() {
+
+    window.location = 'http://www.google.com/search?q= ' + document.getElementById('txtSearch').value;
+
+    return false;
+
+}
